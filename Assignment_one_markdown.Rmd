@@ -1,0 +1,36 @@
+---
+title: "Assignment-1"
+output: html_document
+date: "2024-09-18"
+---
+
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+# Starting the Animals Code below -
+animals <- c('snake', 'Ostrich', 'cat', 'spider')
+num_legs <- c(0,2,4,8)
+animal_df <- data.frame(animals, num_legs)
+ls()
+summary(animal_df)
+```
+
+#Another Section below to print animals
+```{r}
+print(animals)
+print("Printing the DF below")
+print(animal_df)
+```
+#WavePlot
+```{r}
+x <- seq(0,20,0.01)
+y <- sin(x)
+sin_df <- data.frame(x,y)
+#head(sin_df,3)
+plot(x,y)
+```
+
+#Mathematical formulas
+\[\sin^2(x)+\cos^2(x) = 1\]
+
+\[ A=\left(\begin{matrix} a_{11} & b_{12} \\ a_{21} & b_{22} \end{matrix}   \right)  \]
+
